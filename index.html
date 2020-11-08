@@ -2,7 +2,31 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script>
+  $(document).ready(function(){
+    $('.showbtn').click(function(){
+         $('.myimgdivshowhide').show();
+    });
+      $('.hidebtn').click(function(){
+         $('.myimgdivshowhide').hide();
+    });
+  });
+
+  $(document).ready(function(){
+    $('.showbtn2').click(function(){
+         $('.myimgdivshowhide').show();
+    });
+      $('.hidebtn2').click(function(){
+         $('.myimgdivshowhide').hide();
+    });
+  });
+  </script>
 <style>
+  .myimgdivshowhide{
+	display:none;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -66,17 +90,20 @@ body {
   <h2>Boyy's pic</h2>
   <h6>IG : press the image below </h6>
   <a href="https://instagram.com/1999_kubo?igshid=thsu5ih6xbiw"><img src="https://i.imgur.com/AyIJHGc.jpg" height="270" width="400"></a>
-  
-  
+  <h6>click to see more</h6>
+        <button type="button" class="showbtn">Show pic</button>  
+        <button type="button" class="hidebtn">Hide pic</button>
 </div>
 
 <div class="row">
   <div class="leftcolumn">
     <div class="card">
       <h2>攝貓日誌</h2>
-      <img src="https://i.imgur.com/88qFmjA.jpg" height="300" width="200">
-      <img src="https://i.imgur.com/3XnRSzJ.jpg" height="300" width="200">
-      <img src="https://i.imgur.com/fgntlks.jpg" height="300" width="420">
+      <div class="myimgdivshowhide">
+        <img src="https://i.imgur.com/88qFmjA.jpg" height="300" width="200" alt="display image on button click" class="img-responsive img-thumbnail"/>
+        <img src="https://i.imgur.com/3XnRSzJ.jpg" height="300" width="200" alt="display image on button click" class="img-responsive img-thumbnail"/>
+        <img src="https://i.imgur.com/fgntlks.jpg" height="300" width="420" alt="display image on button click" class="img-responsive img-thumbnail"/>
+      </div>
       <p>這張照片是小貓太餓跑來旁邊看我🥺 也成了他們留給我最好的紀念～</p>
       <p> 和以往的套路一樣
           把飼料分成數次喂食
@@ -91,9 +118,11 @@ body {
     </div>
     <div class="card">
       <h2>剪影 Silhouette</h2>
-      <img src="https://i.imgur.com/hhYQtNd.jpg" height="300" width="200">
-      <img src="https://i.imgur.com/fgWGl4O.jpg" height="300" width="200">
-      <img src="https://i.imgur.com/psnpyau.jpg" height="300" width="420">
+      <div class="myimgdivshowhide">
+        <img src="https://i.imgur.com/hhYQtNd.jpg" height="300" width="200" alt="display image on button click" class="img-responsive img-thumbnail"/>
+        <img src="https://i.imgur.com/fgWGl4O.jpg" height="300" width="200" alt="display image on button click" class="img-responsive img-thumbnail"/>
+        <img src="https://i.imgur.com/psnpyau.jpg" height="300" width="420" alt="display image on button click" class="img-responsive img-thumbnail"/>
+      </div>
       <p>特愛日出落的天空</p>
 	  <p>特別是</p>
 	  <p>別上彎月的剪影</p>
@@ -104,13 +133,17 @@ body {
   <div class="rightcolumn">
     <div class="card">
       <h2>About pic</h2>
-      <img src="https://i.imgur.com/9Uik1b5.jpg" height="300" width="200">
+      <div class="myimgdivshowhide">
+        <img src="https://i.imgur.com/9Uik1b5.jpg" height="300" width="200" alt="display image on button click" class="img-responsive img-thumbnail"/>
+      </div>
       <p>camera : fuji xt20</p>
       <p>lens   : XF 35mm 1.4</p>
     </div>
     <div class="card">
       <h3>Popular Post</h3>
-	  <img src="https://i.imgur.com/u5ik9Tx.jpg" height="300" width="200">
+      <div class="myimgdivshowhide">
+        <img src="https://i.imgur.com/u5ik9Tx.jpg" height="300" width="200" alt="display image on button click" class="img-responsive img-thumbnail"/>
+      </div>
       <p>很幸運在日出拍到小琉球海龜~</p>
       <a href="https://www.instagram.com/p/CC3YVsYjTL7/?utm_source=ig_web_button_share_sheet">more pic</a>
       
